@@ -1,0 +1,48 @@
+@font-face {
+  font-family: AssistanceLighter;
+  src: url("../Fonts/Assistant-Light.ttf");
+}
+
+footer {
+  width: 98.72vw;
+  height: 23vw;
+  font-family: AssistanceLighter;
+}
+.footer-top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.contact-section {
+  width: 29%;
+  text-align: center;
+}
+.contact-section input {
+  width: 94%;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: AssistanceLighter;
+  padding: 10px;
+  border: 1.4px solid #4d4d4d;
+}
+input:focus {
+  outline: none;
+}
+.contact-section input:hover {
+  border: 2px solid #4d4d4d;
+}
+hr {
+  border: none;
+  height: 0.5px;
+  background-color: #ececec;
+}
+.footer-copyright {
+  height: 35%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: 5%;
+  font-size: 13px;
+}

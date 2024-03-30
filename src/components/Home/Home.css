@@ -1,0 +1,121 @@
+@font-face {
+  font-family: Assistance;
+  src: url("../Fonts/Assistant-Regular.ttf");
+}
+
+@keyframes bannerSlide {
+  0% {
+    background-position: top;
+    transform: scale(1.05);
+  }
+  30% {
+    background-position: right;
+    transform: scale(1.01);
+  }
+  50% {
+    background-position: bottom;
+    transform: scale(1.05);
+  }
+  70% {
+    background-position: left;
+    transform: scale(1.02);
+  }
+  100% {
+    background-position: top;
+    transform: scale(1.05);
+  }
+}
+
+.banner {
+  width: 98.72vw;
+  height: 75vh;
+  background-color: orange;
+  display: flex;
+  margin-top: 2%;
+  overflow: hidden;
+  position: relative;
+}
+.left-banner {
+  width: 50%;
+  height: 100%;
+  background-image: url("/public/banner1.jpg");
+  background-repeat: no-repeat;
+  animation: bannerSlide 30s linear infinite;
+}
+.right-banner {
+  width: 50%;
+  height: 100%;
+  background-image: url("/public/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: bannerSlide 30s linear infinite;
+}
+.top-surface {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-surface-inner {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+}
+.top-surface-inner button {
+  border: 1.5px solid #fff;
+  padding: 13px 30px;
+  font-size: 15px;
+  background-color: transparent;
+  color: #fff;
+  font-family: Assistance;
+  cursor: pointer;
+  transition: 0.05s;
+}
+button:focus {
+  outline: none;
+}
+.top-surface-inner button:hover {
+  border: 3px solid;
+}
+.top-surface-inner h1 {
+  font-family: Assistance;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: #fff;
+}
+#new-arrivals {
+  width: 98.72vw;
+  height: 100vh;
+  font-family: Assistance;
+}
+#new-arrivals h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  margin-left: 5%;
+}
+.product-lists {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+.product {
+  width: 20%;
+  height: 95%;
+  transform: skew(-6deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
