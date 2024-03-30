@@ -1,8 +1,12 @@
+import './Cart.css'
 
 const Cart = () => {
   return (
     <div>
-      Cart products
+      <div id='cart-items'>
+        <h1>Your cart is empty</h1>
+        <button>Continue shopping</button>
+      </div>
     </div>
   )
 }

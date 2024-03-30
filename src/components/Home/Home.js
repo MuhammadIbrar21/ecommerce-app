@@ -1,13 +1,9 @@
 import './Home.css'
+import NewArrivals from '../NewArrivals/NewArrivals'
+import SummerTees from '../SummerTees/SummerTees'
+import Collections from '../Collections/Collections'
 
-const Home = ({ products }) => {
-  // let productList = document.querySelectorAll('.product');
-
-  products.forEach(product => {
-    product.addEventListener('mouseenter', ()=>{
-      product.style.backgroundImage = `url(${product.product_img[1]})`
-    })
-  });
+const Home = ({ products, summerTeesProducts, collections }) => {
 
   return (
     <div>
@@ -21,14 +17,9 @@ const Home = ({ products }) => {
           </div>
         </div>
       </div>
-      <section id='new-arrivals'>
-        <h1>new arrivals</h1>
-        <div className='product-lists'>
-          {products.map(product => {
-            return <div className='product' style={{ backgroundImage: `url(${product.product_img[0]})` }}>{product.product_name}<br />Rs.{(product.product_price).toLocaleString()}</div>
-          })}
-        </div>
-      </section>
+      <NewArrivals products={products} />
+      <SummerTees products={summerTeesProducts} />
+      <Collections products={collections} />
     </div>
   )
 }

@@ -3,6 +3,11 @@
   src: url("../Fonts/Assistant-Regular.ttf");
 }
 
+@font-face {
+  font-family: LightAssistance;
+  src: url("../Fonts/Assistant-Light.ttf");
+}
+
 @keyframes bannerSlide {
   0% {
     background-position: top;
@@ -82,7 +87,8 @@ button:focus {
   outline: none;
 }
 .top-surface-inner button:hover {
-  border: 3px solid;
+  outline: 2px solid #fff;
+  outline-offset: 0px;
 }
 .top-surface-inner h1 {
   font-family: Assistance;
@@ -90,32 +96,4 @@ button:focus {
   letter-spacing: 3px;
   font-weight: 400;
   color: #fff;
-}
-#new-arrivals {
-  width: 98.72vw;
-  height: 100vh;
-  font-family: Assistance;
-}
-#new-arrivals h1 {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 40px;
-  margin-left: 5%;
-}
-.product-lists {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0;
-  overflow: hidden;
-}
-.product {
-  width: 20%;
-  height: 95%;
-  transform: skew(-6deg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }

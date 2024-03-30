@@ -1,0 +1,27 @@
+#cart-items {
+  width: 98.72vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#cart-items h1 {
+  font-family: Assistance;
+  font-size: 40px;
+  font-weight: lighter;
+}
+#cart-items button {
+  padding: 13px 40px;
+  font-family: Assistance;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  background-color: #000;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#cart-items button:hover {
+  outline: 1px solid #000;
+  outline-offset: 0px;
+}

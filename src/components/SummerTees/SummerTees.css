@@ -1,0 +1,108 @@
+#summer-tees {
+  width: 98.72vw;
+  height: 130vh;
+  font-family: Assistance;
+}
+#summer-tees h1 {
+  font-weight: 400;
+  font-size: 40px;
+  margin-left: 5%;
+}
+#summer-tees .product-lists {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+#summer-tees .product-container {
+  width: 290px;
+  height: 490px;
+  font-family: Assistance;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+}
+#summer-tees .product {
+  width: 100%;
+  height: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+#summer-tees .product:hover {
+  transform: scale(1.03);
+}
+#summer-tees .product::after {
+  position: absolute;
+  content: "Sale";
+  width: 60px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2%;
+  left: 5%;
+}
+.product-name {
+  font-family: LightAssistance;
+  font-size: 15px;
+  padding-block: 10px;
+}
+.price-section {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.actual-price {
+  font-family: LightAssistance;
+  text-decoration: line-through;
+}
+.pagination {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+}
+.pages-number {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-arrow {
+  transform: rotate(180deg);
+}
+.pages-number svg {
+  width: 10px;
+  cursor: pointer;
+}
+.new-arrivals-view-all-btn {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.new-arrivals-view-all-btn button {
+  padding: 15px 30px;
+  background-color: transparent;
+  border: 1px solid #4d4d4d;
+  transition: 0.05s;
+  font-family: Assistance;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.new-arrivals-view-all-btn button:hover {
+  outline: 2px solid #4d4d4d;
+  outline-offset: 0px;
+}

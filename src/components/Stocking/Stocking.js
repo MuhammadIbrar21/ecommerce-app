@@ -2,7 +2,7 @@
 const Stocking = () => {
   return (
     <div>
-      Stocking asdkl
+      Stocking
     </div>
   )
 }
