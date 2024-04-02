@@ -9,6 +9,9 @@
   font-size: 40px;
   margin-left: 5%;
 }
+::-webkit-scrollbar {
+  width: 0px;
+}
 .product-lists {
   width: 100%;
   height: 70%;
@@ -16,13 +19,16 @@
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 .product-container {
   width: 290px;
   height: 490px;
   font-family: Assistance;
   cursor: pointer;
+  flex-shrink: 0;
+  margin-left: 10px;
 }
 .product {
   width: 100%;

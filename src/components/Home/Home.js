@@ -3,7 +3,7 @@ import NewArrivals from '../NewArrivals/NewArrivals'
 import SummerTees from '../SummerTees/SummerTees'
 import Collections from '../Collections/Collections'
 
-const Home = ({ products, summerTeesProducts, collections }) => {
+const Home = () => {
 
   return (
     <div>
@@ -17,9 +17,9 @@ const Home = ({ products, summerTeesProducts, collections }) => {
           </div>
         </div>
       </div>
-      <NewArrivals products={products} />
-      <SummerTees products={summerTeesProducts} />
-      <Collections products={collections} />
+      <NewArrivals />
+      <SummerTees />
+      <Collections />
     </div>
   )
 }

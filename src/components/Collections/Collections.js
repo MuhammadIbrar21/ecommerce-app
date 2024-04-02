@@ -1,6 +1,7 @@
 import './Collections.css'
+import products from '../../CollectionsProducts';
 
-const Collections = ({ products }) => {
+const Collections = () => {
     return (
         <div>
             <section id='collections'>

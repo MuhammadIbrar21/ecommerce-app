@@ -1,25 +1,26 @@
-// import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './NewArrivals.css'
+import Products from '../../Products';
 
-const NewArrivals = ({ products }) => {
-
-    // const [bgImg, setBgImg] = useState([])
+const NewArrivals = () => {
 
     return (
         <div>
             <section id='new-arrivals'>
                 <h1>new arrivals</h1>
                 <div className='product-lists'>
-                    {products.map(product => {
+                    {Products.map(product => {
                         return <div className='product-container'>
-                            <div className='product' style={{ backgroundImage: `url(${product.product_img[0]})` }}></div>
-                            <div className='product-details'>
-                                <div className='product-name'>{product.product_name}</div>
-                                <div className='price-section'>
-                                    <div className='actual-price'>Rs.{((product.product_price).toLocaleString())}.00 PKR</div>
-                                    <div className='discount-price'>Rs.{((product.product_price) - (product.discount)).toLocaleString()}.00 PKR</div>
+                            <Link to={`/${product.product_name}`}>
+                                <div className='product' style={{ backgroundImage: `url(${product.product_img[0]})` }}></div>
+                                <div className='product-details'>
+                                    <div className='product-name'>{product.product_name}</div>
+                                    <div className='price-section'>
+                                        <div className='actual-price'>Rs.{((product.product_price).toLocaleString())}.00 PKR</div>
+                                        <div className='discount-price'>Rs.{((product.product_price) - (product.discount)).toLocaleString()}.00 PKR</div>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     })}
                 </div>

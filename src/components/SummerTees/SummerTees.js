@@ -1,6 +1,8 @@
 import './SummerTees.css'
+import products from '../../SummerTeesProducts'
+import { Link } from 'react-router-dom'
 
-const SummerTees = ({ products }) => {
+const SummerTees = () => {
     return (
         <div>
             <section id='summer-tees'>
@@ -8,14 +10,16 @@ const SummerTees = ({ products }) => {
                 <div className='product-lists'>
                     {products.map(product => {
                         return <div className='product-container'>
-                            <div className='product' style={{ backgroundImage: `url(${product.product_img[0]})` }}></div>
-                            <div className='product-details'>
-                                <div className='product-name'>{product.product_name}</div>
-                                <div className='price-section'>
-                                    <div className='actual-price'>Rs.{((product.product_price).toLocaleString())}.00 PKR</div>
-                                    <div className='discount-price'>Rs.{((product.product_price) - (product.discount)).toLocaleString()}.00 PKR</div>
+                            <Link to={`/${product.product_name}`}>
+                                <div className='product' style={{ backgroundImage: `url(${product.product_img[0]})` }}></div>
+                                <div className='product-details'>
+                                    <div className='product-name'>{product.product_name}</div>
+                                    <div className='price-section'>
+                                        <div className='actual-price'>Rs.{((product.product_price).toLocaleString())}.00 PKR</div>
+                                        <div className='discount-price'>Rs.{((product.product_price) - (product.discount)).toLocaleString()}.00 PKR</div>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     })}
                 </div>
