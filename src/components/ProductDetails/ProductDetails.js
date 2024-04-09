@@ -2,9 +2,13 @@ import { useParams } from 'react-router-dom'
 import './ProductDetails.css'
 import Products from '../../Products';
 import SummerTeesProducts from '../../SummerTeesProducts';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { CartContext } from '../Context/cartContext';
+import {toast} from 'react-toastify';
 
 const ProductDetails = () => {
+
+    const { addToCart } = useContext(CartContext);
 
     const [quantity, setQuantity] = useState(1);
 
@@ -77,7 +81,10 @@ const ProductDetails = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" /></svg>
                         </button>
                     </div>
-                    <button id='addToCart'>Add to cart</button>
+                    <button id='addToCart' onClick={()=>{
+                        addToCart(thisProduct)
+                        toast.success('Product added into Cart');
+                    }}>Add to cart</button>
                     <button id='buyItNow'>Buy it now</button>
                 </div>
             </div>

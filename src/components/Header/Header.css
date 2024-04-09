@@ -107,3 +107,20 @@ a {
   font-size: 18px;
   font-family: Assistance;
 }
+#add-to-cart{
+  position: relative;
+}
+#add-to-cart span{
+  position: absolute;
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50%;
+  font-size: 0.9vw;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  bottom: 0.5vw;
+}
