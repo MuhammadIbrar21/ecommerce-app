@@ -1,8 +1,9 @@
+import AllProducts from '../AllProducts/AllProducts';
 
 const Stocking = () => {
   return (
     <div>
-      Stocking
+      <AllProducts />
     </div>
   )
 }

@@ -1,8 +1,9 @@
+import AllProducts from '../AllProducts/AllProducts';
 
 const TurtleNeck = () => {
     return (
         <div>
-            Turtle Neck
+            <AllProducts/>
         </div>
     )
 }

@@ -1,8 +1,9 @@
+import AllProducts from '../AllProducts/AllProducts';
 
 const Women = () => {
   return (
     <div>
-      Women
+      <AllProducts/>
     </div>
   )
 }

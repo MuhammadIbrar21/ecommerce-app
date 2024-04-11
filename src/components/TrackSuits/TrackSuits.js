@@ -1,8 +1,9 @@
+import AllProducts from '../AllProducts/AllProducts';
 
 const TrackSuits = () => {
   return (
     <div>
-      Track suits
+      <AllProducts />
     </div>
   )
 }

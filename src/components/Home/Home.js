@@ -2,6 +2,7 @@ import './Home.css'
 import NewArrivals from '../NewArrivals/NewArrivals'
 import SummerTees from '../SummerTees/SummerTees'
 import Collections from '../Collections/Collections'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
@@ -13,7 +14,7 @@ const Home = () => {
         <div className='top-surface'>
           <div className='top-surface-inner'>
             <h1>Browse our latest products</h1>
-            <button>Shop all</button>
+            <Link to='/all'><button>Shop all</button></Link>
           </div>
         </div>
       </div>

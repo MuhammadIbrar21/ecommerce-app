@@ -1,0 +1,19 @@
+.product-body {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.each-product {
+  width: 250px;
+  cursor: pointer;
+}
+.each-product img {
+  width: 100%;
+}
+.each-product:hover p:nth-child(2) {
+  text-decoration: underline;
+}

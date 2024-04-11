@@ -1,0 +1,17 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5%;
+}
+.page-item{
+    width: 20px;
+    height: 20px;
+}
+.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.page-link{
+    cursor: pointer;
+}

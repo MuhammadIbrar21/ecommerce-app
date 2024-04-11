@@ -33,7 +33,7 @@ const NewArrivals = () => {
                         </div>
                     </div>
                     <div className='new-arrivals-view-all-btn'>
-                        <button>View all</button>
+                        <Link to='/all'><button>View all</button></Link>
                     </div>
                 </div>
             </section>

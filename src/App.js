@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import Women from './components/Women/Women';
 import Cart from './components/Cart/Cart';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import AllProducts from './components/AllProducts/AllProducts';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/:productName' element={<ProductDetails />} />
+            <Route path='/all' element={<AllProducts />} />
             <Route path='/women' element={<Women />} />
             <Route path='/tracksuit' element={<TrackSuits />} />
             <Route path='/stocking' element={<Stocking />} />

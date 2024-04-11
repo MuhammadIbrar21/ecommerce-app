@@ -1,8 +1,9 @@
+import AllProducts from '../AllProducts/AllProducts';
 
 const CropTshirts = () => {
   return (
     <div>
-      Crop TShirts
+      <AllProducts />
     </div>
   )
 }
